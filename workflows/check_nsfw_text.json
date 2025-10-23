@@ -1,0 +1,26 @@
+{
+  "1": {
+    "inputs": {
+      "text": "a man walking in the park",
+      "threshold": 0.5,
+      "model": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "CheckNSFWText",
+    "_meta": {
+      "title": "Check NSFW Text"
+    }
+  },
+  "2": {
+    "inputs": {
+      "model": "michellejieli/NSFW_text_classifier",
+      "device": "cuda"
+    },
+    "class_type": "LoadNSFWTextModel",
+    "_meta": {
+      "title": "Load NSFW Text Model"
+    }
+  }
+}

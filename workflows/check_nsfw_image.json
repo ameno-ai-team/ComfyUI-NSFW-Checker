@@ -1,0 +1,39 @@
+{
+  "1": {
+    "inputs": {
+      "interval": 0,
+      "threshold": 0.5,
+      "model": [
+        "2",
+        0
+      ],
+      "image": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "CheckNSFWVision",
+    "_meta": {
+      "title": "Check NSFW Vision"
+    }
+  },
+  "2": {
+    "inputs": {
+      "model": "AdamCodd/vit-base-nsfw-detector",
+      "device": "cuda"
+    },
+    "class_type": "LoadNSFWVisionModel",
+    "_meta": {
+      "title": "Load NSFW Vision Model"
+    }
+  },
+  "3": {
+    "inputs": {
+      "image": "3x2_A_close_up_view_through_the_driv.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}
