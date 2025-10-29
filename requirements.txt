@@ -6,4 +6,3 @@ transformers
 accelerate
 safetensors
 Pillow
-numpy==1.26.3
